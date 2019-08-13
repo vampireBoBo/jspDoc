@@ -1,0 +1,14 @@
+===学习网址：https://www.runoob.com/jsp/jstl-format-setbundle-tag.html
+
+1、创建配置文件
+2、导入fmtde taglib
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+3、嵌入资源束
+	<fmt:setBundle>标签解读：资源束中key的读取使用标签用来载入一个资源束，然后将它存储在作用域中已命名的变量或bundle配置变量中。
+		baseName；配置文件的路径 ssm项目中默认从Resource目录读取
+		var：将该资源束中的键值存放于var属性指定的变量中
+		scope:该资源束的作用域  默认为page
+	<fmt:message>标签解读：资源束中key的读取使用<fmt:message> 进行读取，
+		key为资源束对应配置文件中key
+		bundle为从哪个资源束中读取对应的key,及读取束中的var。
+		var为将读取的value存放的变量名称，若没有该属性则页面将直接显示该value值。
